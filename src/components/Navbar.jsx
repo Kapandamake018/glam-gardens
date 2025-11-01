@@ -34,7 +34,7 @@ return (
         )}
     >
         <div className="container flex items-center justify-between">
-            <a className="text-xl font-bold flex items-center gap-3"
+            <a className="text-xl font-bold flex items-center gap-2"
                 href="#hero"
             >
                 <img 
