@@ -1,1 +1,1 @@
-a website for my friends' business, Glam Gardens!
+a website for my friend's business, Glam Gardens!
