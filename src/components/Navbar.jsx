@@ -34,9 +34,14 @@ return (
         )}
     >
         <div className="container flex items-center justify-between">
-            <a className="text-xl font-bold flex items-center"
+            <a className="text-xl font-bold flex items-center gap-3"
                 href="#hero"
             >
+                <img 
+                    src="/logo.jpg" 
+                    alt="Glam Gardens Logo" 
+                    className="h-12 w-12 object-cover rounded-full border-2 border-primary/30 shadow-lg hover:border-primary transition-all duration-300"
+                />
                 <span className="relative z-10">
                     <span className="text-primary font-bold">Glam </span>
                     <span className="text-primary">Gardens</span>
