@@ -7,8 +7,7 @@ import { Menu } from "lucide-react";
 const navItems = [
     { name: "Home", href: "#hero" },
     { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
+    { name: "Products", href: "#products" },
     { name: "Contact", href: "#contact" },
 ];
 
@@ -35,12 +34,12 @@ return (
         )}
     >
         <div className="container flex items-center justify-between">
-            <a className="text-xl font-bold text-primary flex items-center"
+            <a className="text-xl font-bold flex items-center"
                 href="#hero"
             >
                 <span className="relative z-10">
-                    <span className="text-glow text-foreground"> The Wavey Crew </span>{""}
-                    Portfolio
+                    <span className="text-primary font-bold">Glam </span>
+                    <span className="text-primary">Gardens</span>
                 </span>
             </a>
 
@@ -50,9 +49,10 @@ return (
                     <a  
                         key={key}
                         href={item.href} 
-                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group"
                     > 
                         {item.name}
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-yellow-500 group-hover:w-full transition-all duration-300"></span>
                     </a>
                 ))}
             </div>

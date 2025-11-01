@@ -1,48 +1,6 @@
-import { CoinsIcon, Instagram, Linkedin, Mail, Phone, Send } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { useToast } from "@/hooks/use-toast"
-import emailjs from '@emailjs/browser';
-import React, { useRef, useState } from "react";
+import { Instagram, Mail, Phone } from "lucide-react"
 
 export const ContactSection = () => {
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const { toast } = useToast();
-    const form = useRef();
-
-    const onSubmit = async (e) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-        
-        try {
-            // Initialize EmailJS
-            emailjs.init("bR3iIwVBLd2Ty7LqN");
-
-            const result = await emailjs.sendForm(
-                'service_cehj4iq',
-                'template_62l05iu',
-                form.current,
-                'BZ-HCwti4JqVGVePO'
-            );
-
-            if (result.status === 200) {
-                toast({
-                    title: "Success!",
-                    description: "Your message has been sent successfully.",
-                });
-                e.target.reset();
-            }
-        } catch (error) {
-            console.error('EmailJS Error:', error);
-            toast({
-                title: "Error",
-                description: "Failed to send message. Please try again.",
-                variant: "destructive",
-            });
-        } finally {
-            setIsSubmitting(false);
-        }
-    };
-
     return (<section id="contact"
      className="py-24 px-4 relative bg-secondary/30">
         <div className="contsainer mx-auto max-w-5xl">
@@ -50,9 +8,9 @@ export const ContactSection = () => {
         Get in <span className="text-primary">Touch</span>
         </h2>
         <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
-        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out through any of the platforms below!
+        We'd love to hear from you! Whether you have questions about our products, need help with an order, or want to discuss custom gift sets, feel free to reach out.
         </p>
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+         <div className="max-w-2xl mx-auto">
             <div className="space-y-8">
                 <h3 className="text-2xl font-semibold mb-6">
                     Contact Information
@@ -67,10 +25,10 @@ export const ContactSection = () => {
                     <div>
                         <h4 className="font-medium">Email</h4>
                         <a
-                            href="mailto:kapandathomas0@gmail.com"
+                            href="mailto:chimwemwemalubila0@gmail.com"
                             className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                            kapandathomas0@gmail.com
+                            chimwemwemalubila0@gmail.com
                         </a>
                     </div>
                 </div>
@@ -82,10 +40,10 @@ export const ContactSection = () => {
                     <div>
                         <h4 className="font-medium">Phone</h4>
                         <a
-                            href="tel:+260964841383"
+                            href="tel:+260978020908"
                             className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                            0964841383
+                            0978020908
                         </a>
                     </div>
                 </div>
@@ -102,7 +60,7 @@ export const ContactSection = () => {
                     <div>
                         <h4 className="font-medium">WhatsApp</h4>
                         <a
-                            href="https://wa.me/260964841383"
+                            href="https://wa.me/260978020908"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-muted-foreground hover:text-primary transition-colors"
@@ -114,79 +72,21 @@ export const ContactSection = () => {
             </div>
 
             <div className="pt-8">
-                <h4 className="font-medium mb-4">Connect With Me</h4>
+                <h4 className="font-medium mb-4">View Our Work</h4>
                 <div className="flex gap-6 justify-center">
                     <a
-                        href="https://www.linkedin.com/in/tumbikani-kapandamake-775276325?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Boph32yozT16HwGTnrswdUg%3D%3D"
+                        href="https://www.instagram.com/glam_gardens_?igsh=MTdjNWd2bXhyYWs5Mw%3D%3D&utm_source=qr"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="transition-transform hover:scale-110"
-                        aria-label="LinkedIn"
+                        aria-label="Instagram"
                     >
                         <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 hover:bg-primary/20">
-                            <Linkedin className="w-7 h-7 text-primary" />
+                            <Instagram className="w-7 h-7 text-primary" />
                         </span>
                     </a>
                 </div>
             </div>
-            </div>
-
-
-            <div className="bg-card p-8 rounded-lg shadow-xs">
-                <h3 className="text-2xl font-semibold mb-6"> Send A Message</h3>
-                <form ref={form} onSubmit={onSubmit} className="space-y-6">
-                    <div>
-                        <label htmlFor="from_name" className="block text-sm mb-2 font-medium">
-                            Your Name
-                        </label>
-                        <input
-                            type="text"
-                            name="from_name"
-                            id="from_name"
-                            required
-                            className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                            placeholder="Your name..."
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="reply_to" className="block text-sm mb-2 font-medium">
-                            Your Email
-                        </label>
-                        <input
-                            type="email"
-                            name="reply_to"
-                            id="reply_to"
-                            required
-                            className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                            placeholder="your@email.com"
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="message" className="block text-sm mb-2 font-medium">
-                            Your Message
-                        </label>
-                        <textarea
-                            name="message"
-                            id="message"
-                            required
-                            className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none h-32"
-                            placeholder="Your message here..."
-                        />
-                    </div>
-
-                    <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className={cn("cosmic-button w-full flex items-center justify-center gap-2")}
-                    >
-                        {isSubmitting ? "Sending..." : "Send Message"}
-                        <Send size={16} />
-                    </button>
-                </form>
-
-
             </div>
         </div>
         </div> 

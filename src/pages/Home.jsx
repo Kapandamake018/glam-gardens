@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import { Navbar } from "../components/Navbar";
-import { StarBackground } from "@/components/StarBackground";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
-import { SkillsSection } from "../components/SkillsSection";
-import { ProjectsSection } from "../components/ProjectsSection";
+import { ProductsSection } from "../components/ProductsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 
@@ -16,8 +14,6 @@ export const Home = () => {
       transition={{ duration: 0.5 }}
       className="min-h-screen bg-background text-foreground overflow-x-hidden"
     >
-      {/* Background Effects */}
-      <StarBackground />
 
       {/* Navbar */}
       <Navbar />
@@ -25,8 +21,7 @@ export const Home = () => {
       <main>
         <HeroSection />
         <AboutSection />
-        <SkillsSection />
-        <ProjectsSection />
+        <ProductsSection />
         <ContactSection />
       </main>
 
