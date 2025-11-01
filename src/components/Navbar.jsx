@@ -33,8 +33,8 @@ return (
             isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
         )}
     >
-        <div className="container flex items-center justify-between">
-            <a className="text-xl font-bold flex items-center gap-2"
+        <div className="container flex items-center justify-between px-6">
+            <a className="text-xl font-bold flex items-center gap-3"
                 href="#hero"
             >
                 <img 
