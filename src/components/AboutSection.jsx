@@ -25,9 +25,9 @@ export const AboutSection = () => {
                         <p className="text-2xl font-light italic mt-6 text-muted-foreground" style={{color: '#D4AF37'}}>
                             "Embrace the glossy side of life"
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                            <a href="#products" className="glam-button">Shop Now</a>
-                            <a href="#contact" className="gold-button">Get In Touch</a>
+                        <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-start items-stretch">
+                            <a href="#products" className="glam-button text-center">Shop Now</a>
+                            <a href="#contact" className="gold-button text-center">Get In Touch</a>
                         </div>
                     </div>
 
