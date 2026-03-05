@@ -188,6 +188,140 @@ const products = [
     image: "/products/image24.jpg",
    // description: "Description here",
   },
+
+ {
+    id: 25,
+    name: "Valentines Package",
+    category: "valentines",
+    price: 1700,
+    image: "/products/image25.jpg",
+   // description: "Description here",
+  },
+ 
+ {
+    id: 26,
+    name: "Glue(Bond and Seal) and a Tweezer",
+    category: "lash-kits",
+    price: 35,
+    image: "/products/image27.jpg",
+   // description: "Description here",
+  },
+
+   {
+    id: 27,
+    name: "Lash Kits",
+    category: "lash-kits",
+    price: 125,
+    image: "/products/image28.jpg",
+   // description: "Description here",
+  },
+ 
+   {
+    id: 28,
+    name: "Lash Kits",
+    category: "lash-kits",
+    price: 125,
+    image: "/products/image31.jpg",
+   // description: "Description here",
+  },
+  // Gift Packages
+  {
+    id: 29,
+    name: "Glam Gift Bag",
+    category: "glam-care",
+    price: 260,
+    image: "/products/image26.jpg",
+  },
+  {
+    id: 30,
+    name: "Glam Gift Package",
+    category: "glam-care",
+    price: 485,
+    image: "/products/image29.jpg",
+  },
+  // Birthday Packages
+  {
+    id: 31,
+    name: "Birthday Package",
+    category: "birthday",
+    price: 500,
+    image: "/products/image30.jpg",
+  },
+  {
+    id: 32,
+    name: "Glam Birthday Package",
+    category: "birthday",
+    price: 430,
+    image: "/products/image38.jpg",
+  },
+  // More Valentine's Packages
+  {
+    id: 33,
+    name: "Valentine's Package",
+    category: "valentines",
+    price: 790,
+    image: "/products/image32.jpg",
+  },
+  {
+    id: 34,
+    name: "Valentine's Package",
+    category: "valentines",
+    price: 580,
+    image: "/products/image33.jpg",
+  },
+  {
+    id: 35,
+    name: "Valentine's Package",
+    category: "valentines",
+    price: 1050,
+    image: "/products/image34.jpg",
+  },
+  {
+    id: 36,
+    name: "Exam Package",
+    category: "exam-care",
+    price: 730,
+    image: "/products/image40.jpg",
+  },
+  // Smoothie Cups
+  {
+    id: 37,
+    name: "Glam Smoothie Cup",
+    category: "smoothie-cups",
+    price: 225,
+    image: "/products/image36.jpg",
+  },
+  // Period Package
+  {
+    id: 38,
+    name: "Glam Period Package",
+    category: "period-package",
+    price: 385,
+    image: "/products/image37.jpg",
+  },
+  // Glam Care
+  {
+    id: 39,
+    name: "Glam Package",
+    category: "glam-care",
+    price: 930,
+    image: "/products/image39.jpg",
+  },
+  // Exam Care Packages
+  {
+    id: 40,
+    name: "Valentines Package",
+    category: "valentines",
+    price: 785,
+    image: "/products/image41.jpg",
+  },
+  {
+    id: 41,
+    name: "Exam Care Package",
+    category: "exam-care",
+    price: 530,
+    image: "/products/image42.jpg",
+  },
 ];
 
 const categories = [
@@ -198,6 +332,10 @@ const categories = [
   { id: "lip-gloss", name: "Lip Gloss", icon: Sparkles },
   { id: "skin-care", name: "Skin Care", icon: Sparkles },
   { id: "accessories", name: "Accessories", icon: Sparkles },
+  { id: "lash-kits", name: "Lash Kits", icon: Sparkles },
+  { id: "birthday", name: "Birthday Packages", icon: Sparkles },
+  { id: "period-package", name: "Period Packages", icon: Sparkles },
+  { id: "exam-care", name: "Exam Care Packages", icon: Sparkles },
 ];
 
 export const ProductsSection = () => {
